@@ -34,11 +34,18 @@
     }
     h1 {
       margin: 0 0 6px;
+      line-height: 1.2;
+    }
+    .titulo-normal {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: clamp(24px, 5vw, 34px);
+      font-weight: bold;
+      color: #b45309;
+    }
+    .titulo-cursiva {
       font-family: "Brush Script MT", cursive;
       font-size: clamp(28px, 6vw, 40px);
-      color: var(--accent);
-      text-shadow: 0 1px 0 #fff;
-      line-height: 1.1;
+      color: #b45309;
     }
     .sub { margin: 0 0 14px; color: #6b7280; font-size: clamp(13px, 2.8vw, 15px); }
     .keybox {
@@ -47,7 +54,7 @@
       background: rgba(255,255,255,.85);
       border-radius: 14px; margin: 14px 0 10px;
     }
-    .key { flex: 1; font-weight: 700; font-size: clamp(16px, 4.8vw, 20px); white-space: nowrap; overflow: auto; }
+    .key { flex: 1; font-weight: 700; font-size: clamp(16px, 4.8vw, 20px); word-break: break-word; white-space: normal; }
     .btn {
       appearance: none; border: 0;
       padding: 12px 16px; border-radius: 12px; font-weight: 700;
@@ -70,7 +77,10 @@
 </head>
 <body>
   <main class="panel">
-    <h1>PIX do Casal<br/>Criciele e Wesley</h1>
+    <h1>
+      <span class="titulo-normal">PIX do Casal</span><br>
+      <span class="titulo-cursiva">Criciele e Wesley</span>
+    </h1>
     <p class="sub">Com carinho, nossa chave PIX. Obrigado por celebrar com a gente! 💍</p>
 
     <div class="keybox">
@@ -79,7 +89,7 @@
     </div>
 
     <div class="row">
-      <a class="btn" href="https://wa.me/?text=Minha%20chave%20PIX:%2065963818945" target="_blank" rel="noopener">Compartilhar no WhatsApp</a>
+      <a class="btn" href="https://wa.me/?text=Minha%20chave%20PIX:%2065996381894" target="_blank" rel="noopener">Compartilhar no WhatsApp</a>
       <button class="btn" id="copyMsgBtn">Copiar com mensagem</button>
     </div>
 
